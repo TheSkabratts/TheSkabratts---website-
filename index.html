@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Skabratts</title>
+<meta name="description" content="The Skabratts — tickets, merch and music.">
+<style>
+  :root { --bg:#050505; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; min-height:100%; background:var(--bg); }
+  body { display:flex; justify-content:center; align-items:flex-start; }
+  .front-page {
+    position:relative;
+    width:min(100vw, 1024px);
+    line-height:0;
+  }
+  .front-page img {
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  .hotspot {
+    position:absolute;
+    left:30.5%;
+    width:39.5%;
+    border-radius:999px;
+    display:block;
+    outline:none;
+  }
+  .hotspot:hover, .hotspot:focus-visible {
+    box-shadow:0 0 0 3px rgba(255,181,27,.85), 0 0 22px rgba(255,181,27,.45);
+  }
+  .tickets { top:67.0%; height:7.1%; }
+  .merch   { top:76.0%; height:7.0%; }
+  .music   { top:84.7%; height:7.0%; }
+  .sr-only {
+    position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+    overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+  }
+  @media (max-width:600px) {
+    .hotspot { left:29.5%; width:41%; }
+  }
+</style>
+</head>
+<body>
+<main class="front-page" aria-label="The Skabratts home page">
+  <img src="assets/front-page.png" alt="The Skabratts — Tickets, Merch, Music">
+  <a class="hotspot tickets" href="tour.html" aria-label="Tickets"><span class="sr-only">Tickets</span></a>
+  <a class="hotspot merch" href="https://199962-2.myshopify.com/pages/run-the-track-crowdfund" target="_blank" rel="noopener noreferrer" aria-label="Merch"><span class="sr-only">Merch</span></a>
+  <a class="hotspot music" href="https://open.spotify.com/artist/2ij26uS1XGAfLd1b8d7wLZ?si=Bnpz4AuARBaaNcpiMaSdeg&utm_source=copy-link" target="_blank" rel="noopener noreferrer" aria-label="Music"><span class="sr-only">Music</span></a>
+</main>
+</body>
+</html>

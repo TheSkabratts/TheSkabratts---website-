@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Skabratts — 2027 UK Tour</title>
+<meta name="description" content="The Skabratts 2027 UK Tour — traditional ska, rocksteady and early reggae.">
+<style>
+  :root {
+    --black:#050505;
+    --panel:#11100d;
+    --gold:#ffb51b;
+    --cream:#f6edc9;
+    --muted:#c7bfa5;
+    --line:#6e5a26;
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    margin:0; background:var(--black); color:var(--cream);
+    font-family:Arial,Helvetica,sans-serif;
+  }
+  a { color:inherit; }
+  .hero {
+    text-align:center; padding:24px 16px 30px;
+    border-bottom:1px solid var(--line);
+    background:radial-gradient(circle at 50% 0%, #2b250f 0, var(--black) 55%);
+  }
+  .logo {
+    width:min(92%,720px); max-height:230px; object-fit:contain;
+    display:block; margin:0 auto 6px;
+  }
+  h1 {
+    margin:4px 0 8px; font-size:clamp(2.2rem,8vw,5rem);
+    letter-spacing:.08em; color:var(--gold); line-height:.95;
+  }
+  .strap {
+    margin:0 auto; max-width:700px; color:var(--cream);
+    font-size:clamp(1rem,3.5vw,1.25rem); line-height:1.5;
+  }
+  .sub { color:var(--muted); margin:8px 0 0; font-size:.95rem; }
+  .tour {
+    width:min(1100px,94%); margin:28px auto 70px;
+    display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px;
+  }
+  .event-card {
+    background:var(--panel); border:1px solid var(--line);
+    border-radius:14px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  .poster-wrap { position:relative; background:#000; }
+  .poster-wrap img {
+    width:100%; height:auto; display:block;
+  }
+  .badge {
+    position:absolute; right:12px; top:12px; background:var(--gold);
+    color:#000; font-weight:900; padding:9px 13px; border-radius:999px;
+    letter-spacing:.04em; box-shadow:0 3px 12px rgba(0,0,0,.4);
+  }
+  .event-info { padding:18px; text-align:center; }
+  .city {
+    color:var(--cream); font-weight:900; font-size:clamp(1.8rem,4vw,2.7rem);
+    letter-spacing:.06em;
+  }
+  .venue { color:var(--gold); font-size:1.15rem; font-weight:700; margin-top:3px; }
+  .date { color:var(--muted); margin:7px 0 15px; }
+  .ticket-btn {
+    display:block; width:100%; padding:14px 16px; border-radius:8px;
+    text-decoration:none; font-weight:900; letter-spacing:.06em;
+    background:var(--gold); color:#050505; transition:transform .15s, filter .15s;
+  }
+  .ticket-btn:hover { filter:brightness(1.08); transform:translateY(-1px); }
+  .ticket-btn span { float:right; }
+  .soldout { background:#403a2c; color:var(--cream); cursor:default; }
+  footer {
+    border-top:1px solid var(--line); text-align:center; padding:26px 16px 40px;
+    color:var(--muted); font-size:.9rem;
+  }
+  @media (max-width:720px) {
+    .hero { padding-top:14px; }
+    .logo { max-height:180px; }
+    .tour { grid-template-columns:1fr; width:min(620px,94%); gap:18px; margin-top:20px; }
+    .event-info { padding:15px; }
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img class="logo" src="assets/logo.png" alt="The Skabratts">
+  <h1>2027 UK TOUR</h1>
+  <p class="strap">Traditional Ska • Rocksteady • Early Reggae</p>
+  <p class="sub">The Skabratts bring the sound of 1960s Jamaica to venues across the UK.</p>
+</header>
+
+<main class="tour">
+      <article class="event-card">
+        <div class="poster-wrap">
+          <img src="assets/london.png" alt="London — The Water Rats — 19 February 2027">
+          
+        </div>
+        <div class="event-info">
+          <div class="city">London</div>
+          <div class="venue">The Water Rats</div>
+          <div class="date">19 February 2027</div>
+          <a class="ticket-btn" href="https://wegottickets.com/f/28158" target="_blank" rel="noopener">BOOK TICKETS <span>→</span></a>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="poster-wrap">
+          <img src="assets/leicester.png" alt="Leicester — Sally Cinnamons — 12 March 2027">
+          <span class="badge">50% SOLD</span>
+        </div>
+        <div class="event-info">
+          <div class="city">Leicester</div>
+          <div class="venue">Sally Cinnamons</div>
+          <div class="date">12 March 2027</div>
+          <a class="ticket-btn" href="https://wegottickets.com/f/23213" target="_blank" rel="noopener">BOOK TICKETS <span>→</span></a>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="poster-wrap">
+          <img src="assets/coventry.png" alt="Coventry — 2Tone Village — 13 March 2027">
+          
+        </div>
+        <div class="event-info">
+          <div class="city">Coventry</div>
+          <div class="venue">2Tone Village</div>
+          <div class="date">13 March 2027</div>
+          <div class="ticket-btn soldout">SOLD OUT</div>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="poster-wrap">
+          <img src="assets/whitehaven.png" alt="Whitehaven — Marchon Club — 2 April 2027">
+          
+        </div>
+        <div class="event-info">
+          <div class="city">Whitehaven</div>
+          <div class="venue">Marchon Club</div>
+          <div class="date">2 April 2027</div>
+          <a class="ticket-btn" href="https://bookwhen.com/frenchysevents" target="_blank" rel="noopener">BOOK TICKETS <span>→</span></a>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="poster-wrap">
+          <img src="assets/brighouse.png" alt="Brighouse — Civic Hall — 3 April 2027">
+          
+        </div>
+        <div class="event-info">
+          <div class="city">Brighouse</div>
+          <div class="venue">Civic Hall</div>
+          <div class="date">3 April 2027</div>
+          <a class="ticket-btn" href="https://www.skiddle.com/whats-on/Huddersfield/Brighouse-Civic-Hall-LIVE/Skabratts-Tour/42581578/?preview=8a27911a31" target="_blank" rel="noopener">BOOK TICKETS <span>→</span></a>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="poster-wrap">
+          <img src="assets/reading.png" alt="Reading — The Flowing Spring — 15 May 2027">
+          
+        </div>
+        <div class="event-info">
+          <div class="city">Reading</div>
+          <div class="venue">The Flowing Spring</div>
+          <div class="date">15 May 2027</div>
+          <a class="ticket-btn" href="https://theflowingspring.sumupstore.com/product/the-skabratts-saturday-15-may-2027-at-the-flowing-spring" target="_blank" rel="noopener">BOOK TICKETS <span>→</span></a>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="poster-wrap">
+          <img src="assets/ipswich.png" alt="Ipswich — Smokehouse — 27 May 2027">
+          
+        </div>
+        <div class="event-info">
+          <div class="city">Ipswich</div>
+          <div class="venue">Smokehouse</div>
+          <div class="date">27 May 2027</div>
+          <div class="ticket-btn soldout">SOLD OUT</div>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="poster-wrap">
+          <img src="assets/nottingham.png" alt="Nottingham — The Chapel — 4 September 2027">
+          
+        </div>
+        <div class="event-info">
+          <div class="city">Nottingham</div>
+          <div class="venue">The Chapel</div>
+          <div class="date">4 September 2027</div>
+          <a class="ticket-btn" href="https://199962-2.myshopify.com/products/the-skabratts-nottingham-general-admission?utm_campaign=share_orders&amp;utm_content=android&amp;utm_medium=product-links" target="_blank" rel="noopener">BOOK TICKETS <span>→</span></a>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="poster-wrap">
+          <img src="assets/bristol.jpg" alt="Bristol — The Exchange — 18 September 2027">
+          
+        </div>
+        <div class="event-info">
+          <div class="city">Bristol</div>
+          <div class="venue">The Exchange</div>
+          <div class="date">18 September 2027</div>
+          <a class="ticket-btn" href="https://hdfst.uk/e163515" target="_blank" rel="noopener">BOOK TICKETS <span>→</span></a>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="poster-wrap">
+          <img src="assets/newcastle.png" alt="Newcastle — The Cluny 2 — 24 September 2027">
+          
+        </div>
+        <div class="event-info">
+          <div class="city">Newcastle</div>
+          <div class="venue">The Cluny 2</div>
+          <div class="date">24 September 2027</div>
+          <a class="ticket-btn" href="https://199962-2.myshopify.com/products/the-skabratts-newcastle-general-admission?utm_campaign=share_orders&amp;utm_content=android&amp;utm_medium=product-links" target="_blank" rel="noopener">BOOK TICKETS <span>→</span></a>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="poster-wrap">
+          <img src="assets/glasgow.png" alt="Glasgow — Central Grand — 25 September 2027">
+          
+        </div>
+        <div class="event-info">
+          <div class="city">Glasgow</div>
+          <div class="venue">Central Grand</div>
+          <div class="date">25 September 2027</div>
+          <a class="ticket-btn" href="https://199962-2.myshopify.com/products/the-skabratts-glasgow-general-admission?utm_campaign=share_orders&amp;utm_content=android&amp;utm_medium=product-links" target="_blank" rel="noopener">BOOK TICKETS <span>→</span></a>
+        </div>
+      </article>
+</main>
+
+<footer>
+  <strong>THE SKABRATTS</strong><br>
+  2027 UK TOUR
+</footer>
+</body>
+</html>
